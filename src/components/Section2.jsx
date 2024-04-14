@@ -59,7 +59,7 @@ function Section2() {
 export default Section2
 
 const Container = styled.div`
-  padding: 120px 0;
+  padding: 100px 0;
 `;
 const Title = styled.div`
   font-size: 36px;
@@ -94,6 +94,7 @@ const HeaderText = styled.div`
 const InnerText = styled.div`
   padding: 50px 0;
   color: var(--zGray);
+  font-family: var(--fontBasic);
   line-height: 130%;
   font-size: 19px;
 `;

@@ -5,6 +5,7 @@ import Main1 from './Main1'
 import Main2 from './Main2'
 import Section1 from './Section1'
 import Section2 from './Section2'
+import Section3 from './Section3'
 
 function PageLayout() {
   return (
@@ -17,6 +18,7 @@ function PageLayout() {
       <Main2 />
       <Section1 />
       <Section2 />
+      <Section3 />
     </Contianer>
   )
 }
