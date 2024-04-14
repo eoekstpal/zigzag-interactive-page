@@ -33,7 +33,7 @@ function Section1() {
 export default Section1
 
 const Container = styled.div`
-  height: 500px;
+  margin: 50px 0;
   padding: 100px 20px;
 `;
 const Title = styled.div`
