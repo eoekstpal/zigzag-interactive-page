@@ -1,18 +1,11 @@
-import styled from 'styled-components';
 import './App.css';
-import Header from './components/Header';
+import PageLayout from './components/PageLayout';
 
 function App() {
   return (
-    <Contianer>
-      <Header />
-    </Contianer>
+    <>
+      <PageLayout />
+    </>
   );
 }
-
 export default App;
-
-const Contianer = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
-`;
