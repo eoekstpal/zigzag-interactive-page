@@ -1,4 +1,5 @@
 import React from 'react'
+import '../index.css'
 import styled from 'styled-components'
 
 function Header() {
@@ -27,27 +28,25 @@ export default Header
 const Container = styled.div`
   font-family: 'NanumSquareBold';
   display: flex;
-  width: 1440px;
-  height: 54px;
-  margin: 0 auto;
   padding: 0 17px;
   align-items: center;
   justify-content: space-between;
-  background-color: #F1ECEA;
+  height: 54px;
+  background-color: var(--headerBeige);
 `;
 const Logo = styled.div`
   font-family: 'NanumSquareAceb';
   display: flex;
   text-align: center;
   justify-content: center;
-
+  color: var(--zBlack);
 `;
 const LogoBox = styled.div`
   font-family: 'NanumSquareExtraBold';
   font-size: 20px;
   width: 25px;
   height: 25px;
-  background-color: #FA6EE3;
+  background-color: var(--zPink);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,14 +64,9 @@ const AppButton = styled.button`
   text-align: center;
   height: 30px;
   padding: 0 12px;
-  background-color: #242729;
+  background-color: var(--zButton);
   border: none;
   border-radius: 100px;
   font-size: 12px;
-  color: #FFFFFF;
+  color: var(--zWhite);
 `;
-
-// font-family: 'NanumSquareLight';
-// font-family: 'NanumSquare';
-// font-family: 'NanumSquareBold';
-// font-family: 'NanumSquareExtraBold';
