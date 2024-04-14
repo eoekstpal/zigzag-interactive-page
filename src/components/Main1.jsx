@@ -22,7 +22,7 @@ function Main1() {
         </Button>
       </TxtBtnBox>
       <ImageBox>
-        <img classname='main1img' src={mainAppImage} alt='MainAppImage' />
+        <img src={mainAppImage} alt='MainAppImage' />
       </ImageBox>
     </Container>
   )
@@ -37,8 +37,9 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 const TxtBtnBox = styled.div`
-  display: grid;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 50px;
 `;
 const Text = styled.div`
@@ -82,7 +83,8 @@ const WhiteButton = styled.button`
 `;
 const ImageBox = styled.div`
   img {
+    width: 570px;
     height: 680px;
-    object-fit: cover;
+
   }
 `;

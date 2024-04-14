@@ -23,7 +23,7 @@ function Main2() {
         </InnerText>
       </TextBox>
       <ImageBox>
-        <img classname='main1img' src={main2AppImage} alt='MainAppImage' />
+        <img src={main2AppImage} alt='MainAppImage' />
       </ImageBox>
     </Container>
   )
@@ -40,18 +40,16 @@ const Container = styled.div`
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: center;
   padding-left: 50px;
 `;
 const HeadText = styled.div`
   text-align: start;
-
   font-family: var(--fontExtraBold);
   font-size: 45px;
   line-height: 130%;
   white-space: nowrap; 
   align-items: end;
-
   p{
     color: var(--zPink);
     font-size: 19px;
@@ -69,7 +67,7 @@ const InnerText = styled.div`
 `;
 const ImageBox = styled.div`
   img {
+    width: 570px;
     height: 680px;
-    object-fit: cover;
   }
 `;

@@ -10,3 +10,6 @@
   --fontBold: 'NanumSquareBold';
   --fontExtraBold: 'NanumSquareExtraBold';
 }
+* {
+  white-space: nowrap; 
+}
