@@ -9,7 +9,10 @@ import Section2 from './Section2'
 function PageLayout() {
   return (
     <Contianer>
-      <Header />
+      <Sticky>
+        <Header />
+      </Sticky>
+      
       <Main1 />
       <Main2 />
       <Section1 />
@@ -23,4 +26,10 @@ export default PageLayout
 const Contianer = styled.div`
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
+`;
+const Sticky = styled.div`
+  position: absolute;
+  position: sticky;
+  top: 0;
 `;
