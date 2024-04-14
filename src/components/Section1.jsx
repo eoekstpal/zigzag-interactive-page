@@ -33,8 +33,8 @@ function Section1() {
 export default Section1
 
 const Container = styled.div`
-  margin: 50px 0;
-  padding: 100px 20px;
+
+  padding: 200px 0;
 `;
 const Title = styled.div`
   text-align: center;

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import phoneAppImage1 from '../assets/images/phoneApp1.png'
-import phoneAppImage2 from '../assets/images/phoneApp2.png'
-import phoneAppImage3 from '../assets/images/phoneApp3.png'
-import phoneAppImage4 from '../assets/images/phoneApp4.png'
+// import phoneAppImage2 from '../assets/images/phoneApp2.png'
+// import phoneAppImage3 from '../assets/images/phoneApp3.png'
+// import phoneAppImage4 from '../assets/images/phoneApp4.png'
 
 function Section3() {
   return (
@@ -41,7 +41,7 @@ const Title = styled.div`
 const GridBox = styled.div`
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding-top: 50px;
 `;
 const InnerText = styled.div`
   display: flex;

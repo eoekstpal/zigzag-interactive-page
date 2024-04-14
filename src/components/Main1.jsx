@@ -17,7 +17,7 @@ function Main1() {
             입점하기
           </BlackButton>
           <WhiteButton>
-            매체 소개서
+            서비스 소개서
           </WhiteButton>
         </Button>
       </TxtBtnBox>
@@ -48,43 +48,39 @@ const Text = styled.div`
   font-family: var(--fontExtraBold);
   font-size: 50px;
   line-height: 130%;
-  white-space: nowrap; 
-  align-items: end;
+  white-space: nowrap;
+  justify-content: center;
 `;
 const Button = styled.div`
   display: flex;
   justify-content: center;
-  align-items: start;
-  padding-top: 40px;
-  font-size: var(--zP);
-
+  padding-top: 30px;
 `;
 const BlackButton = styled.button`
   color: var(--zWhite);
   background-color: var(--zBlack);
+  font-family: var(--fontBold);
   font-size: 17px;
-  font-family: var(--fontExtraBold);
   border: none;
   border-radius: 100px;
   margin: 0 10px;
   padding: 16px;
-  width: 128px;
+  width: 140px;
 `;
 const WhiteButton = styled.button`
   color: var(--zBlack);
   background-color: var(--zWhite);
   border-color: var(--zBlack);
-  font-size: 17px;
   font-family: var(--fontExtraBold);
+  font-size: 17px;
   border-radius: 100px;
   margin: 0 10px;
   padding: 16px;
-  width: 128px;
+  width: 140px;
 `;
 const ImageBox = styled.div`
   img {
     width: 570px;
     height: 680px;
-
   }
 `;

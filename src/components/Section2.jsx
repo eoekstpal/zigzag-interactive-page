@@ -37,7 +37,6 @@ function Section2() {
             쇼핑몰 운영을 위한 업계 최초<br/>
             데일리 정산 시스템 도입
           </InnerText>
-
         </Box>
 
         <Box>
