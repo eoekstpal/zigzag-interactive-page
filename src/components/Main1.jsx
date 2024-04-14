@@ -8,8 +8,8 @@ function Main1() {
     <Container>
       <TxtBtnBox>
         <Text>
-          내일 뭐 입지? 
-          <br/>고민말고 지그재그!  
+          내일 뭐 입지?<br/>
+          고민말고 지그재그!  
         </Text>
 
         <Button>
