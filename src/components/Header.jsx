@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 function Header() {
   return (
-    <>
       <Container>
         <Logo>
           <LogoBox>
@@ -19,14 +18,13 @@ function Header() {
           앱으로 이동
         </AppButton>
       </Container>
-    </>
   )
 }
 
 export default Header
 
 const Container = styled.div`
-  font-family: 'NanumSquareBold';
+  font-family: var(--fontBold);
   display: flex;
   padding: 0 17px;
   align-items: center;
@@ -35,14 +33,13 @@ const Container = styled.div`
   background-color: var(--headerBeige);
 `;
 const Logo = styled.div`
-  font-family: 'NanumSquareAceb';
   display: flex;
   text-align: center;
   justify-content: center;
   color: var(--zBlack);
 `;
 const LogoBox = styled.div`
-  font-family: 'NanumSquareExtraBold';
+  font-family: var(--fontExtraBold);
   font-size: 20px;
   width: 25px;
   height: 25px;
@@ -54,13 +51,13 @@ const LogoBox = styled.div`
   border-radius: 4px;
 `;
 const LogoText = styled.div`
-  font-family: 'NanumSquareBold';
+  font-family: var(--fontBold);
   font-size: 16px;
   display: flex;
   align-items: center;
 `;
 const AppButton = styled.button`
-  font-family: 'NanumSquare';
+  font-family: var(--fontBold);
   text-align: center;
   height: 30px;
   padding: 0 12px;
