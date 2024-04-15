@@ -21,7 +21,7 @@ function Section3() {
           </p>
         </InnerText>
         <ImageSlider>
-          <img src={phoneAppImage1} alt='Phone App Image' />
+          <img src={phoneAppImage1} alt='Phone App Screens' />
         </ImageSlider>
       </GridBox>
     </Container>
