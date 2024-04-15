@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../index.css'
+import '../../index.css'
 import styled from 'styled-components'
 import ReactModal from 'react-modal';
 import Modal from './Modal';
@@ -52,7 +52,7 @@ const Container = styled.div`
   background-color: var(--headerBeige);
   border: none;
   width: 100%;
-  position: relative;
+  position: absolute;
 `;
 const Logo = styled.div`
   display: flex;

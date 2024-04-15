@@ -1,7 +1,7 @@
 import React from 'react'
-import '../index.css'
+import '../../index.css'
 import styled from 'styled-components';
-import mainAppImage from '../assets/images/main1AppImage.png'
+import mainAppImage from '../../assets/images/main1AppImage.png'
 
 function Main1() {
   return (
@@ -33,8 +33,8 @@ export default Main1
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 680px;
   margin: 0 auto;
+  background-color: var(--zWhite);
 `;
 const TxtBtnBox = styled.div`
   display: flex;

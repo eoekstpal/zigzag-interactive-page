@@ -1,7 +1,7 @@
 import React from 'react'
-import '../index.css'
+import '../../index.css'
 import styled from 'styled-components';
-import main2AppImage from '../assets/images/main2AppImage.png'
+import main2AppImage from '../../assets/images/main2AppImage.png'
 
 function Main2() {
   return (
@@ -36,6 +36,7 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   height: 680px;
   margin: 0 auto;
+  background-color: var(--zWhite);
 `;
 const TextBox = styled.div`
   display: flex;

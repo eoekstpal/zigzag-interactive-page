@@ -1,22 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import Header from './Header'
-import Main1 from './Main1'
-import Main2 from './Main2'
-import Section1 from './Section1'
-import Section2 from './Section2'
-import Section3 from './Section3'
-import Section4 from './Section4'
+import Header from './MainScroll/Header'
+import Main from './MainScroll/Main'
+import Section1 from './Sections/Section1'
+import Section2 from './Sections/Section2'
+import Section3 from './Sections/Section3'
+import Section4 from './Sections/Section4'
 
 function PageLayout() {
   return (
     <Contianer>
       <Sticky>
         <Header />
+        <Header style = 'visibility: hidden' />
       </Sticky>
       
-      <Main1 />
-      <Main2 />
+      <Main />
       <Section1 />
       <Section2 />
       <Section3 />
@@ -36,4 +35,5 @@ const Sticky = styled.div`
   position: absolute;
   position: sticky;
   top: 0;
+  z-index: 100;
 `;

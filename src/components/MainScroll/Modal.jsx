@@ -1,7 +1,7 @@
 import React from 'react'
-import zigzagAppQR from '../assets/images/zigzagAppQR.png';
+import zigzagAppQR from '../../assets/images/zigzagAppQR.png';
 import styled from 'styled-components';
-import '../index.css'
+import '../../index.css'
 
 function Modal({ handleModalClose }) {
   return (
