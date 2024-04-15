@@ -14,12 +14,18 @@ function Main1() {
         </Text>
 
         <Button>
-          <BlackButton>
-            입점하기
-          </BlackButton>
-          <WhiteButton>
-            서비스 소개서
-          </WhiteButton>
+          <a href='https://partners.kakaostyle.com/entry_requests/guide'>
+            <BlackButton >
+              입점하기
+            </BlackButton>
+          </a>
+          
+          <a href = 'https://drive.google.com/file/d/10B_knAcHnAZ4QmI9PDJvcMi2x7oM2lWB/view'>
+            <WhiteButton>
+              서비스 소개서
+            </WhiteButton> 
+          </a>
+
         </Button>
       </TxtBtnBox>
       <ImageBox>
@@ -71,6 +77,7 @@ const BlackButton = styled.button`
   margin: 0 10px;
   padding: 16px;
   width: 140px;
+  src: 'https://partners.kakaostyle.com/entry_requests/guide';
 `;
 const WhiteButton = styled.button`
   color: var(--zBlack);

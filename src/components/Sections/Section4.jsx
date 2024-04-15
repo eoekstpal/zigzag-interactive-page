@@ -22,7 +22,9 @@ function Section4() {
             상품을 사입 및 제작하여<br/>
             판매하는 스토어
           </InnerText>
-          <LinkButton>더 알아보기</LinkButton>
+          <a href='https://partnerlounge.kakaostyle.com/store'>
+            <LinkButton>더 알아보기</LinkButton>
+          </a>
         </Box>
 
         <Box>
@@ -35,7 +37,10 @@ function Section4() {
             상품을 자체 제작하여<br/>
             판매하는 비중이 높은 스토어
           </InnerText>
-          <LinkButton>더 알아보기</LinkButton>
+          <a href='https://partnerlounge.kakaostyle.com/brand'>
+            <LinkButton>더 알아보기</LinkButton>
+          </a>
+          
         </Box>
 
         <Box>
@@ -47,7 +52,9 @@ function Section4() {
             뷰티 상품을 제작 및<br/>
             판매하는 스토어
           </InnerText>
-          <LinkButton>더 알아보기</LinkButton>
+          <a href='https://partnerlounge.kakaostyle.com/beauty'>
+            <LinkButton>더 알아보기</LinkButton>
+          </a>
         </Box>
 
         <Box>
@@ -59,7 +66,9 @@ function Section4() {
             라이프스타일 상품군을<br/>
             제작 및 판매하는 스토어
           </InnerText>
-          <LinkButton>더 알아보기</LinkButton>
+          <a href='https://partnerlounge.kakaostyle.com/life'>
+            <LinkButton>더 알아보기</LinkButton>
+          </a>
         </Box>
       </CardBox>
     </Container>
