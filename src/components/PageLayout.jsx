@@ -12,7 +12,7 @@ function PageLayout() {
     <Contianer>
       <Sticky>
         <Header />
-        <Header style = {{visibility: hidden}} />
+        <Header style = {{ visibility: 'hidden' }} />
       </Sticky>
       
       <Main />
