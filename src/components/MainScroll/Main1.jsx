@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../index.css'
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import mainAppImage from '../../assets/images/main1AppImage.png'
 import Arrow from './Arrow'
 
