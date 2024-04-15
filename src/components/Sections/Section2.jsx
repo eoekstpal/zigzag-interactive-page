@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TfiReload } from "react-icons/tfi";
 import { LiaCalendarCheckSolid } from "react-icons/lia";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Section2() {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  });
+
   return (
     <Container>
       <Title>
@@ -13,9 +24,12 @@ function Section2() {
           <span> 선택</span>해야 할까요?
         </h2>
       </Title>
-      
-      <CardBox>
-        <Box>
+
+        <CardBox 
+         data-aos='fade-up'
+         data-aos-duration='500'
+        >
+        <Box >
           <Icon>
             <TfiReload />
           </Icon>
