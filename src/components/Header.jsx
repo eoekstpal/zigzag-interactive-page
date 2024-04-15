@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../index.css'
 import styled from 'styled-components'
+import ReactModal from 'react-modal';
+import Modal from './Modal';
 
 function Header() {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  }
+  const handleModalClose = () => {
+    setModalOpen(false);
+  }
+  
   return (
       <Container>
         <Logo>
@@ -14,9 +26,16 @@ function Header() {
           </LogoText>
         </Logo>
         
-        <AppButton>
+        <AppButton onClick={handleModalOpen}>
           앱으로 이동
-        </AppButton>
+        </AppButton>    
+        <ReactModal 
+          isOpen={modalOpen} 
+          onRequestClose={() => setModalOpen(false)} 
+          style={StyledModal}
+        >
+          <Modal handleModalClose={handleModalClose}/>
+        </ReactModal>
       </Container>
   )
 }
@@ -31,6 +50,9 @@ const Container = styled.div`
   justify-content: space-between;
   height: 54px;
   background-color: var(--headerBeige);
+  border: none;
+  width: 100%;
+  position: relative;
 `;
 const Logo = styled.div`
   display: flex;
@@ -67,3 +89,18 @@ const AppButton = styled.button`
   font-size: 12px;
   color: var(--zWhite);
 `;
+const StyledModal = ReactModal.Styles = {
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
+
+
+  },
+  content: {
+    width: '350px',
+    height: '450px',
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    borderRadius: "30px",
+  }
+}
