@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../index.css'
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import mainAppImage from '../../assets/images/main1AppImage.png'
+import Arrow from './Arrow'
 
 function Main1() {
   return (
@@ -24,6 +25,7 @@ function Main1() {
       <ImageBox>
         <img src={mainAppImage} alt='MainAppImage' />
       </ImageBox>
+      <Arrow />
     </Container>
   )
 }
@@ -32,9 +34,12 @@ export default Main1
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   margin: 0 auto;
   background-color: var(--zWhite);
+  height: 100vh;
+  position: relative;
+  width: 100%;
 `;
 const TxtBtnBox = styled.div`
   display: flex;
@@ -79,8 +84,28 @@ const WhiteButton = styled.button`
   width: 140px;
 `;
 const ImageBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   img {
-    width: 570px;
-    height: 680px;
+    height: 100%;
+    width: 100%;
   }
 `;
+// const ArrowBlink = keyframes`
+//   0% {
+//     margin-top: 70%;
+//   }
+//   100% {
+//     margin-top: 75%;
+//   }
+//   `;
+// const Arrow = styled.div`
+//   position: absolute;
+//   z-index: 30;
+//   font-size: 100px;
+//   /* bottom: 0; */
+//   left: 50%;
+//   transform: translate3d(-50%, -50%, 0);
+//   animation: ${ArrowBlink} 1s alternate infinite;
+// `;

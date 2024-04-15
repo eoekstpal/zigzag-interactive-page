@@ -2,6 +2,7 @@ import React from 'react'
 import '../../index.css'
 import styled from 'styled-components';
 import main2AppImage from '../../assets/images/main2AppImage.png'
+import Arrow from './Arrow';
 
 function Main2() {
   return (
@@ -25,6 +26,7 @@ function Main2() {
       <ImageBox>
         <img src={main2AppImage} alt='MainAppImage' />
       </ImageBox>
+      <Arrow />
     </Container>
   )
 }
@@ -33,10 +35,12 @@ export default Main2
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 680px;
+  grid-template-columns: 1fr 2fr;
   margin: 0 auto;
   background-color: var(--zWhite);
+  height: 100vh;
+  position: relative;
+  width: 100%;
 `;
 const TextBox = styled.div`
   display: flex;
@@ -67,8 +71,11 @@ const InnerText = styled.div`
   padding-top: 20px;
 `;
 const ImageBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   img {
-    width: 570px;
-    height: 680px;
+    height: 100%;
+    width: 100%;
   }
 `;
