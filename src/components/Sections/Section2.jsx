@@ -28,6 +28,8 @@ function Section2() {
         <CardBox 
          data-aos='fade-up'
          data-aos-duration='500'
+         data-aos-anchor-placement='center-bottom'
+         data-aos-easing='Ease in Cubic'
         >
         <Box >
           <Icon>
